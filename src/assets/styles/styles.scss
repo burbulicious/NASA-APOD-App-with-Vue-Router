@@ -3,11 +3,12 @@
 @import url('./base.scss');
 @import url('./buttons.scss');
 @import url('./typography.scss');
+@import url('./nav.scss');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 #app {
-    @apply m-0 p-0 w-full;
+  @apply m-0 p-0 w-full;
 }

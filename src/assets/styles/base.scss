@@ -49,12 +49,8 @@
 }
 
 body {
-  @apply min-h-[100vh] leading-normal m-0 p-0;
+  @apply min-h-[100vh] leading-normal m-0 p-0 bg-black text-white;
 
-  color: var(--color-text);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
   font-family:
     Inter,
     -apple-system,

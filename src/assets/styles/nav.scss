@@ -1,0 +1,23 @@
+.nav-btn {
+  @apply text-xl mx-6 transition-all duration-300 text-white hover:text-yellow uppercase relative;
+
+  &::after {
+    @apply absolute -bottom-1 left-[50%] w-0 bg-yellow h-[1px] transition-all duration-300;
+
+    content: '';
+  }
+
+  &:hover {
+    &::after {
+      @apply w-full left-0;
+    }
+  }
+
+  &.router-link-exact-active {
+    @apply text-yellow;
+
+    &::after {
+      @apply w-full left-0;
+    }
+  }
+}

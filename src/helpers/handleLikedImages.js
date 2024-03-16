@@ -12,7 +12,6 @@ class LikedImages {
 
   removeImage(targetedDate) {
     this.all = this.all.filter(image => image.date !== targetedDate);
-    console.log(this.all);
     storeDataInLocalStorage('liked-images', this.all);
   }
 }

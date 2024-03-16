@@ -9,10 +9,6 @@ const fetchImageData = async date => {
       throw new Error('Failed to fetch data');
     }
     const data = await response.json();
-    console.log('Title:', data.title);
-    console.log('Date:', data.date);
-    console.log('Explanation:', data.explanation);
-    console.log('URL:', data.url);
 
     return data;
   } catch (error) {
@@ -21,11 +17,4 @@ const fetchImageData = async date => {
   }
 };
 
-//   fetchData()
-//     .then(data => {
-//       displayAPOD(data);
-//     })
-//     .catch(error => {
-//       console.error('Error:', error);
-//     });
 export default fetchImageData;

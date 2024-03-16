@@ -70,7 +70,7 @@ body {
 }
 
 .section {
-  @apply w-full relative py-28;
+  @apply w-full relative py-36;
 
   &.pt-small {
     @apply pt-14;
@@ -82,5 +82,5 @@ body {
 }
 
 .container {
-  @apply mx-auto;
+  @apply mx-auto px-4;
 }
